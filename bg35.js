@@ -243,6 +243,9 @@ function nd() {
     z.textContent = "catch";
     a.textContent = "download";
     v.textContent = "remove links";
+    z.style = "color:black";
+    a.style = "color:black";
+    v.style = "color:black";
     z.setAttribute("onclick","h()");
     a.setAttribute("onclick","downloadFile()");
     v.setAttribute("onclick","rem()");
