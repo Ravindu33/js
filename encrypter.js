@@ -2,7 +2,7 @@
 function atobb(arg) {
 y = arg;
 x = arg.length;
-console.log(x);
+//console.log(x);
   var   i;
     for (i = 0; i < x; i++) {
         var z = y[i];
@@ -148,12 +148,12 @@ console.log(x);
 function bbtoa(arg) {
     y = arg.match(/.{1,4}/g);
 x =y .length;
-console.log(x);
+//console.log(x);
   var   i;
   var g;
   for (i = 0; i < x; i++) {
       z=y[i];
-      console.log(z);
+    //  console.log(z);
       if(z=="AAGV") {
          g+="A" ;
       }else if(z=="UAHJ") {
@@ -284,7 +284,7 @@ console.log(x);
           console.error("I cant encrypt symbols.");
         break;
       }
-      console.log(g);
+   //   console.log(g);
       if(i ==x-1) {
         a = g.slice(9);
             return a
