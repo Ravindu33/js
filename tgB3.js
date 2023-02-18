@@ -5,6 +5,7 @@ ii = i+1;
 C = localStorage.getItem("User");
 tB = localStorage.getItem("Btoken");
 Url = el.src;
+console.log(Url);
 dat = {
 chat_id:C,
 video:Url
