@@ -1,8 +1,3 @@
-function Greq(ur) {
-    var url = "https://pakthama.000webhostapp.com/Downloder/C.php?url=rr";
-fetch(url).then(response => response.text()).then(text => console.log(text));
-
-}
 localStorage.setItem("ttttt",0);
 
 async function send(el,i) {
