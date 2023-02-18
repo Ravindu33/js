@@ -41,6 +41,7 @@ function start() {
     c = document.createElement("input");
     d = document.createElement("input");
     e = document.createElement("Button");
+    f = document.createElement("Button");
     a.style = "position:fixed;top:50px;right:50px;background:;width: 50px;height: 50px;border-radius:50%;border: 2px solid black;box-shadow: 0px 0px 0px 1px;";
     a.id = "widget";
     b.id = "Div";
@@ -51,6 +52,8 @@ function start() {
     e.id = "suB";
     e.textContent ="Submit";
     e.setAttribute("onclick","sub()");
+    f.textContent="goo on";
+    f.setAttribute("onclick","gon()");
     a.setAttribute("onclick","Don()");
     b.style = "position: fixed;bottom: 0px;width: 90%;left:0px;height: 200px;background:#000000;color:white;display:none;border:3px solid white;";
     c.style = "";
@@ -59,7 +62,10 @@ function start() {
     b.appendChild(c);
     b.appendChild(d);
     b.appendChild(e);
-    document.querySelectorAll("video").forEach(send);
+    b.appendChild(f);
+}
+function gon(){
+document.querySelectorAll("video").forEach(send);
 }
 function Don() {
     x = Number(localStorage.getItem("ttttt"));
