@@ -55,7 +55,7 @@ function start() {
     f.textContent="goo on";
     f.setAttribute("onclick","gon()");
     a.setAttribute("onclick","Don()");
-    b.style = "position: fixed;bottom: 0px;width: 90%;left:0px;height: 200px;background:#000000;color:white;display:none;border:3px solid white;";
+    b.style = "position: fixed;bottom: 0px;width: 90%;left:0px;height: 200px;background:#000000;color:white;font-color:red;display:none;border:3px solid white;";
     c.style = "";
     document.body.appendChild(a);
     document.body.appendChild(b);
