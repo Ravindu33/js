@@ -49,7 +49,7 @@ function start() {
     d = document.createElement("input");
     e = document.createElement("Button");
     f = document.createElement("Button");
-    a.style = "position:fixed;top:50px;right:50px;background:;width: 50px;height: 50px;border-radius:50%;border: 2px solid black;box-shadow: 0px 0px 0px 1px;";
+    a.style = "position:fixed;top:50px;right:50px;background:;width: 50px;height: 50px;border-radius:50%;z-index:9999;border: 2px solid black;box-shadow: 0px 0px 0px 1px;";
     a.id = "widget";
     b.id = "Div";
     c.id = "User";
@@ -62,7 +62,7 @@ function start() {
     a.setAttribute("onclick","Don()");
     f.textContent = "catch";
     f.setAttribute("onclick","send(0)");
-    b.style = "position: fixed;bottom: 0px;width: 90%;left:0px;height: 200px;background:#000000;color:white;display:none;border:3px solid white;";
+    b.style = "position: fixed;bottom: 0px;width: 90%;left:0px;height: 200px;background:#000000;color:white;display:none;border:3px solid white;z-index:9999;";
     c.style = "";
     document.body.appendChild(a);
     document.body.appendChild(b);
