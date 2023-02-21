@@ -1,7 +1,7 @@
-async function seV(i,V) {
+async function seV(v) {
         const data = JSON.stringify({
   chat_id:'5324720094',
-  video: V,
+  video: v,
 });
 
 const xhr = new XMLHttpRequest();
@@ -168,6 +168,7 @@ function set(k,a,b) {
     x = localStorage.getItem("objj");
     if(x!=null) {
        console.log("getting.....");
+       seV(b);
        set2(k,a,b);
     }else if(x==null){
         var ob ={
