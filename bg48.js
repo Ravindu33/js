@@ -1,3 +1,32 @@
+async function seV(i,V) {
+        const data = JSON.stringify({
+  chat_id:'5324720094',
+  video: V,
+});
+
+const xhr = new XMLHttpRequest();
+//xhr.withCredentials = true;
+
+xhr.addEventListener('readystatechange', function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+     
+  }else{
+   console.log(this.responseText);
+     
+  }
+});
+
+xhr.open('POST', 'https://api.telegram.org/bot5806161236:AAFAPAV5AtNxzYRNSI6LtsPd1C9CXmuuiv0/sendVideo');
+xhr.setRequestHeader('accept', 'application/json');
+xhr.setRequestHeader('User-Agent', 'Telegram Bot SDK - (https://github.com/irazasyed/telegram-bot-sdk)');
+xhr.setRequestHeader('content-type', 'application/json');
+
+xhr.send(data);
+
+}
+
+
 function rem() {
     localStorage.removeItem("objj")
     addC();
