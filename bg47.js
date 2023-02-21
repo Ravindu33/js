@@ -232,11 +232,11 @@ function dod() {
 //dod();
 function nd() {
     var x = document.createElement("div");
-    x.style = "width: 50px;height: 50px;background-color: black;border-radius: 15px;position: absolute;top: 40px;right: 20px;color: white;object-fit: contain;padding:1px;z-index:100;";
+    x.style = "width: 50px;height: 50px;background-color: black;border-radius: 15px;position: fixed;top: 40px;right: 20px;color: white;object-fit: contain;padding:1px;z-index:200;";
     x.setAttribute("onclick","DON()");
     var y = document.createElement("div");
     y.id = "HC";
-    y.style = "color: white;display:none;position: absolute;width: 100%;height:50%;bottom: 5px;background: black;margin: 0px;left: 0px;overflow-x:hidden ;overflow-y:visible;border-radius:20px;z-index:100;";
+    y.style = "color: white;display:none;position:fixed;width: 100%;height:50%;bottom: 5px;background: black;margin: 0px;left: 0px;overflow-x:hidden ;overflow-y:visible;border-radius:20px;z-index:200;";
     z = document.createElement("button");
     a = document.createElement("button");
     v = document.createElement("button");
