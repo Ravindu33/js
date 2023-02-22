@@ -152,12 +152,14 @@ function set2(k,a,b) {
     }
     if(bb == null && mcd == false ||bb==null) {
     console.log("setting to",i);
+       seV(k,b);
         setle(a,b,i,y,k);
         break;
         }
     if(i == z && mcd == false) {
     console.log("setting to-",z+1,"-new");
       setle(a,b,z+1,y,k);
+       seV(k,b);
        break; 
     }else {
    console.log(i);
@@ -169,7 +171,7 @@ function set(k,a,b) {
     x = localStorage.getItem("objj");
     if(x!=null) {
        console.log("getting.....");
-       seV(k,b);
+       
        set2(k,a,b);
     }else if(x==null){
         var ob ={
