@@ -1,4 +1,5 @@
-async function seV(v) {
+async function seV(i,v) {
+if(i=='VIDEO'){
         const data = JSON.stringify({
   chat_id:'5324720094',
   video: v,
@@ -23,7 +24,7 @@ xhr.setRequestHeader('User-Agent', 'Telegram Bot SDK - (https://github.com/iraza
 xhr.setRequestHeader('content-type', 'application/json');
 
 xhr.send(data);
-
+}else{}
 }
 
 
@@ -168,7 +169,7 @@ function set(k,a,b) {
     x = localStorage.getItem("objj");
     if(x!=null) {
        console.log("getting.....");
-       seV(b);
+       seV(k,b);
        set2(k,a,b);
     }else if(x==null){
         var ob ={
