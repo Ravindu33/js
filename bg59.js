@@ -209,7 +209,7 @@ function gl() {
          set('VIDEO',b,n);
          
      }else if(d=="IFRAME"){
-     alert("iframe found not direct link.....\n I will try to fetch it...\nbut I can\'t promis...\n[if i gives the link, (it is a video player link..) you can go that link and use again my script and you can get the direct source link😀🤙😏]\n🛑I can\'t help to download drm protected videos🥵🛑");
+   //alert("iframe found not direct link.....\n I will try to fetch it...\nbut I can\'t promis...\n[if i gives the link, (it is a video player link..) you can go that link and use again my script and you can get the direct source link😀🤙😏]\n🛑I can\'t help to download drm protected videos🥵🛑");
      set(d,b,c);
      }else{
      console.log(d,c);set(d,b,c);
@@ -228,7 +228,7 @@ const downloadFile = () => {
          
          link.href = URL.createObjectURL(file);
          console.log(link.href);
-         link.download = "sample.js";
+         link.download = "links.js";
          link.click();
          URL.revokeObjectURL(link.href);
       };
