@@ -1,4 +1,5 @@
 localStorage.setItem("ODr",0);
+const Apii='';
 const but=`<div style="width:auto; height:auto; background:white;color:black;border:1px solid gray;border-radius:3px;z-index:99999;" id="ReFB" onclick="ref()">Refesh</div>`;
 async function sendToDrive(ul,name){
   const xhr = new XMLHttpRequest();
@@ -10,7 +11,7 @@ x=this.responseText;
   dv.innerHTML+="<br>"+x;
  }
 });
-xhr.open('GET','https://script.google.com/macros/s/AKfycbzjLBkZReCXVXgJcM_X8VnV4GtrMQrZV39p-dZQ3zmv-zSHwqyTUg8Pv7tLFRRGTKlu/exec?url='+ul+'&name='+name);
+xhr.open('GET',Apii+'?Auth=saveUl&url='+ul+'&name='+name);
 xhr.send();
 
 }
