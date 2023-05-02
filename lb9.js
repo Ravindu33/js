@@ -10,7 +10,7 @@ x=this.responseText;
   dv.innerHTML+="<br>"+x;
  }
 });
-xhr.open('GET','https://script.google.com/macros/s/AKfycbyZwbjnPc3Bxfy-WkjvdKCljy7a_dMXin4T-BzADeMYGocNLyXmPHy7rQFIxDuVVX-LXA/exec?url='+ul+'&name='+name);
+xhr.open('GET','https://script.google.com/macros/s/AKfycbzjLBkZReCXVXgJcM_X8VnV4GtrMQrZV39p-dZQ3zmv-zSHwqyTUg8Pv7tLFRRGTKlu/exec?url='+ul+'&name='+name);
 xhr.send();
 
 }
